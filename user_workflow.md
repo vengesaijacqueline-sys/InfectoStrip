@@ -167,3 +167,46 @@ Training will cover:
 ---
 
 # 8. Workflow Summary
+Patient arrives at healthcare facility
+
+↓
+
+Healthcare worker assesses symptoms
+
+↓
+
+Sample collected
+
+↓
+
+InfectoStrip test performed
+
+↓
+
+Biochemical reaction occurs
+
+↓
+
+Image captured through mobile application
+
+↓
+
+AI analyses diagnostic pattern
+
+↓
+
+Interpretation + confidence score provided
+
+↓
+
+Healthcare worker makes clinical decision
+
+---
+
+# 9. Design Principle
+
+The InfectoStrip workflow is designed around one principle:
+
+Artificial intelligence should reduce barriers to diagnostic support, not create new barriers within healthcare delivery.
+
+By combining affordable diagnostic technology with accessible digital tools, InfectoStrip aims to strengthen frontline healthcare systems and improve access to timely health information.
