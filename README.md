@@ -71,6 +71,12 @@ Screenshots include:
 Screenshots are available in:
 
 `/screenshots`
+<img width="1280" height="698" alt="image 1" src="https://github.com/user-attachments/assets/691a1cd5-ef32-4494-9587-8432eb10b50f" />
+<img width="673" height="444" alt="image 2" src="https://github.com/user-attachments/assets/975e9ec4-f9d0-44bb-9644-e83948d9c9f3" />
+<img width="748" height="1280" alt="image 3" src="https://github.com/user-attachments/assets/0c8722c4-81b2-4704-a5e3-157151ce17b7" />
+<img width="540" height="1042" alt="image 4" src="https://github.com/user-attachments/assets/26b4a352-19e8-4674-a2ab-f701f54ee744" />
+<img width="540" height="1066" alt="image 5" src="https://github.com/user-attachments/assets/7e731929-3a13-4ac2-aa9b-8781b9806bb7" />
+
 
 ---
 
