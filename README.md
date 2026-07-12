@@ -110,3 +110,81 @@ The AI system is designed as decision support and does not replace clinical judg
 ---
 
 # System Architecture
+Patient Sample
+|
+↓
+InfectoStrip Diagnostic Strip
+(Biomarker Reaction Zones)
+|
+↓
+Smartphone Image Capture
+|
+↓
+Mobile Application
+(Image Processing Layer)
+|
+↓
+AI Computer Vision Model
+|
+↓
+Biochemical Pattern Interpretation
+|
+↓
+AI-Assisted Screening Result
+|
+↓
+Healthcare Worker Decision Support
+
+---
+
+# Current Development Stage
+
+InfectoStrip is currently in the prototype and development stage.
+
+Current focus areas include:
+
+- development of the mobile application workflow;
+- AI interpretation model development;
+- diagnostic strip optimisation;
+- technical validation planning;
+- preparation for future clinical evaluation.
+
+Before healthcare deployment, InfectoStrip will require appropriate laboratory validation, regulatory review, ethical approval, and clinical evaluation.
+
+---
+
+# Responsible AI and Data Protection
+
+Healthcare artificial intelligence requires strong safeguards.
+
+InfectoStrip is being designed around:
+
+- human oversight;
+- secure handling of health information;
+- responsible data collection;
+- transparency regarding AI limitations.
+
+The platform is intended to support healthcare workers by improving access to diagnostic information while maintaining professional clinical responsibility.
+
+---
+
+# Future Development
+
+The long-term goal of InfectoStrip is to create a scalable diagnostic platform where multiple disease-specific strips can operate through a shared AI interpretation system.
+
+Future applications may include:
+
+- InfectoStrip TB;
+- InfectoStrip Febrile;
+- InfectoStrip Maternal;
+- InfectoStrip Sepsis.
+
+By combining affordable biochemical diagnostics with artificial intelligence, InfectoStrip aims to strengthen diagnostic access across Zimbabwe and other low-resource healthcare environments.
+
+---
+
+# Development Status
+
+🚧 Active Development
+
+InfectoStrip is currently under development and is not yet approved for clinical use.
