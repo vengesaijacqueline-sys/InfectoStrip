@@ -1,190 +1,318 @@
-# InfectoStrip Diagnostics
+# InfectoStrip
 
-## AI-Enabled Paper-Based Point-of-Care Diagnostic Platform
+AI-enabled paper-based diagnostic platform for rapid point-of-care disease screening.
 
-## Overview
+## Problem
 
-InfectoStrip is an AI-enabled point-of-care diagnostic platform designed to improve access to affordable, rapid, and reliable disease screening in low-resource healthcare settings.
+Healthcare systems in low-resource environments face a major diagnostic access challenge. In Zimbabwe, the majority of citizens rely on public healthcare facilities where diagnostic capacity is often limited by equipment shortages, laboratory delays, high testing costs, and limited specialist availability.
 
-The platform combines **paper-based biochemical diagnostic technology**, **smartphone-based computer vision**, and **machine learning** to transform biological reactions into objective digital interpretations that support healthcare decision-making.
+This creates a situation where healthcare workers frequently have to make decisions based on symptoms alone rather than objective diagnostic evidence. Delayed or inaccurate diagnosis can lead to delayed treatment, unnecessary medication use, worsening disease outcomes, and increased pressure on already constrained healthcare systems.
 
-Unlike conventional diagnostic workflows that depend on expensive laboratory infrastructure and specialist interpretation, InfectoStrip is designed to bring diagnostic support closer to patients through a low-cost, portable, and scalable approach.
+The problem is particularly significant for infectious diseases, where early detection is critical for effective treatment and preventing complications.
 
-The first product under development is **InfectoStrip UTI Plus**, a urinary tract infection (UTI) screening solution. The long-term vision is to develop a broader InfectoStrip diagnostic ecosystem targeting multiple disease areas, including tuberculosis, febrile illnesses, maternal health conditions, and sepsis.
+InfectoStrip focuses initially on urinary tract infections (UTIs), with future expansion toward additional infectious disease applications.
 
----
+## Target Users
 
-# The Healthcare Challenge
+Primary users:
 
-Across many low-resource settings, access to timely diagnostic testing remains a major barrier to effective healthcare delivery.
+- Nurses and frontline healthcare workers in primary healthcare facilities
+- Community health workers operating in underserved areas
+- Healthcare programmes requiring accessible diagnostic support
 
-Healthcare facilities often face:
+Beneficiaries:
 
-- limited laboratory capacity;
-- equipment breakdowns;
-- reagent shortages;
-- long turnaround times;
-- shortages of specialised laboratory personnel.
-
-These challenges force healthcare workers to make decisions with incomplete diagnostic information, increasing the risk of delayed treatment, inappropriate medication use, and preventable complications.
-
-InfectoStrip was designed to address this diagnostic gap by enabling rapid screening at the point of care.
+- Patients requiring affordable and timely diagnostic screening
+- Rural and underserved communities
+- Healthcare systems seeking improved diagnostic capacity
 
 ---
 
-# Technology Overview
+# Solution
 
-## 1. Paper-Based Biochemical Diagnostic Strip
+InfectoStrip is a paper-based diagnostic platform that combines biochemical testing technology with artificial intelligence and smartphone-based image analysis.
 
-The foundation of InfectoStrip is a paper-based diagnostic strip containing specialised biochemical reaction zones.
+The first product, InfectoStrip UTI Plus, is designed to support rapid urinary tract infection screening.
 
-These zones contain reagents designed to interact with specific biomarkers present in patient samples.
+The physical diagnostic strip contains biomarker detection zones that react with components within a patient sample. These biochemical reactions create measurable colour changes across different zones of the strip.
 
-When a sample is applied, biochemical interactions produce measurable colour changes across different reaction areas.
+The InfectoStrip mobile application captures an image of the completed strip and uses artificial intelligence to analyse the reaction patterns.
 
-The resulting colour patterns contain information related to the biological process being screened.
+The AI system provides:
 
-For InfectoStrip UTI Plus, these biomarker reactions are designed to support urinary tract infection screening.
+- automated image interpretation;
+- standardised analysis of colour-based reactions;
+- confidence scoring;
+- decision-support information for healthcare workers.
 
-The strip provides the biological signal; artificial intelligence provides the digital interpretation layer.
+The platform is designed to support clinical decision-making, not replace healthcare professionals.
 
----
+Future InfectoStrip products may address additional diseases including:
 
-# 2. Smartphone-Based Analysis Platform
-
-The InfectoStrip mobile application connects the physical diagnostic strip with artificial intelligence.
-
-The workflow is:
-
-1. A patient sample is applied to the diagnostic strip.
-2. Biochemical reactions occur within designated reaction zones.
-3. A smartphone captures an image of the strip.
-4. The application processes the image.
-5. The AI model analyses reaction patterns.
-6. The system provides an AI-assisted interpretation for healthcare decision support.
-
-The application is designed to support use by frontline healthcare workers, including nurses and community health workers operating in environments with limited laboratory access.
+- tuberculosis;
+- febrile illnesses;
+- maternal health conditions;
+- sepsis.
 
 ---
 
-# 3. Artificial Intelligence and Computer Vision Layer
+# Demo
 
-The AI component uses computer vision and machine learning to analyse diagnostic strip images.
+## Prototype Screenshots
 
-The system is designed to address challenges associated with manual visual interpretation, including:
+The current prototype demonstrates the planned InfectoStrip mobile application workflow.
 
-- differences in lighting conditions;
-- smartphone camera variation;
-- subjective colour interpretation;
-- differences in user experience.
+Screenshots include:
 
-The AI pipeline includes:
+- application interface;
+- diagnostic scanning workflow;
+- AI-assisted result display.
 
-## Image Processing
+Screenshots are available in:
 
-Standardising captured images through processes such as:
-
-- image quality assessment;
-- colour calibration;
-- orientation correction.
-
-## Pattern Recognition
-
-The machine learning model analyses:
-
-- colour intensity;
-- reaction zone patterns;
-- spatial distribution;
-- relationships between different diagnostic markers.
-
-## Output Generation
-
-The system provides:
-
-- AI-assisted interpretation;
-- confidence estimation;
-- guidance for healthcare workers.
-
-The AI system is designed as decision support and does not replace clinical judgement.
+`/screenshots`
 
 ---
 
-# System Architecture
+# Architecture
+
+The InfectoStrip system consists of four major components:
+
+## 1. Diagnostic Layer
+
+Paper-based biochemical diagnostic strip containing biomarker detection zones.
+
+The strip generates visual biochemical reactions after interaction with a patient sample.
+
+## 2. Mobile Application
+
+The mobile application provides:
+
+- user guidance;
+- image capture;
+- result display;
+- healthcare worker interaction.
+
+## 3. Artificial Intelligence Layer
+
+The AI system performs:
+
+- image preprocessing;
+- diagnostic zone identification;
+- colour pattern analysis;
+- machine learning classification;
+- confidence estimation.
+
+## 4. Data Layer
+
+The system may include secure data storage for:
+
+- anonymised testing information;
+- model improvement;
+- performance monitoring.
+
+Architecture flow:
 Patient Sample
-|
 ↓
 InfectoStrip Diagnostic Strip
-(Biomarker Reaction Zones)
-|
+↓
+Biochemical Colour Reaction
 ↓
 Smartphone Image Capture
-|
 ↓
 Mobile Application
-(Image Processing Layer)
-|
 ↓
-AI Computer Vision Model
-|
+AI Image Analysis
 ↓
-Biochemical Pattern Interpretation
-|
+Interpretation + Confidence Score
 ↓
-AI-Assisted Screening Result
-|
-↓
-Healthcare Worker Decision Support
+Healthcare Worker Decision
 
 ---
 
-# Current Development Stage
+# Data
 
-InfectoStrip is currently in the prototype and development stage.
+## Data Sources
 
-Current focus areas include:
+The AI model will require labelled diagnostic images containing:
 
-- development of the mobile application workflow;
-- AI interpretation model development;
-- diagnostic strip optimisation;
-- technical validation planning;
-- preparation for future clinical evaluation.
+- InfectoStrip test images;
+- verified reference results;
+- different environmental conditions.
 
-Before healthcare deployment, InfectoStrip will require appropriate laboratory validation, regulatory review, ethical approval, and clinical evaluation.
+## Data Rights
 
----
+All healthcare-related data will require appropriate permissions, ethical consideration, and responsible management before use.
 
-# Responsible AI and Data Protection
+## Sample Data
 
-Healthcare artificial intelligence requires strong safeguards.
+During development, synthetic or controlled sample datasets may be used for:
 
-InfectoStrip is being designed around:
+- interface testing;
+- algorithm development;
+- workflow demonstration.
 
-- human oversight;
-- secure handling of health information;
-- responsible data collection;
-- transparency regarding AI limitations.
+## Limitations
 
-The platform is intended to support healthcare workers by improving access to diagnostic information while maintaining professional clinical responsibility.
+Potential data limitations include:
 
----
-
-# Future Development
-
-The long-term goal of InfectoStrip is to create a scalable diagnostic platform where multiple disease-specific strips can operate through a shared AI interpretation system.
-
-Future applications may include:
-
-- InfectoStrip TB;
-- InfectoStrip Febrile;
-- InfectoStrip Maternal;
-- InfectoStrip Sepsis.
-
-By combining affordable biochemical diagnostics with artificial intelligence, InfectoStrip aims to strengthen diagnostic access across Zimbabwe and other low-resource healthcare environments.
+- availability of diverse diagnostic images;
+- variation in smartphone cameras;
+- differences in lighting conditions;
+- need for clinical validation datasets.
 
 ---
 
-# Development Status
+# AI Method
 
-🚧 Active Development
+## AI Approach
 
-InfectoStrip is currently under development and is not yet approved for clinical use.
+InfectoStrip uses computer vision and machine learning to interpret biochemical colour patterns generated by the diagnostic strip.
+
+The AI workflow includes:
+
+1. Image capture
+2. Image quality assessment
+3. Image preprocessing
+4. Reaction zone analysis
+5. Pattern recognition
+6. Result generation
+
+## Validation Approach
+
+The AI system will require validation through:
+
+- laboratory testing;
+- comparison against reference diagnostic methods;
+- evaluation using labelled datasets;
+- clinical assessment before deployment.
+
+## Risks
+
+Potential risks include:
+
+- incorrect interpretation;
+- biased performance due to limited datasets;
+- poor performance under different environmental conditions.
+
+## Human Oversight
+
+AI outputs will support healthcare workers but will not replace clinical judgement.
+
+Healthcare professionals remain responsible for:
+
+- patient assessment;
+- diagnosis;
+- treatment decisions;
+- referrals.
+
+---
+
+# Setup
+
+## Current Status
+
+The current repository contains technical documentation and prototype information.
+
+The functional application and AI model are under development.
+
+## Future Setup Requirements
+
+Future software versions may require:
+
+- mobile development environment;
+- backend infrastructure;
+- AI model dependencies.
+
+---
+
+# Environment Variables
+
+Future software deployment may require environment variables for:
+
+- database connections;
+- authentication systems;
+- API services.
+
+No private keys or sensitive credentials should be stored in this repository.
+
+A `.env.example` file will be provided when software infrastructure is implemented.
+
+---
+
+# Tests
+
+Current validation activities focus on:
+
+- technical feasibility;
+- workflow testing;
+- prototype evaluation.
+
+Future testing will include:
+
+- AI performance evaluation;
+- diagnostic accuracy assessment;
+- usability testing;
+- clinical validation.
+
+---
+
+# Deployment
+
+## Deployment Model
+
+InfectoStrip is designed for deployment within:
+
+- primary healthcare facilities;
+- community healthcare programmes;
+- approved healthcare settings.
+
+Before deployment, the platform will require:
+
+- regulatory approval;
+- ethical review;
+- clinical validation.
+
+## Operational Assumptions
+
+Deployment will require:
+
+- trained healthcare users;
+- smartphone availability;
+- diagnostic strip supply chain;
+- technical support systems.
+
+---
+
+# Known Limitations
+
+Current limitations include:
+
+- prototype stage development;
+- no completed clinical validation;
+- AI model requires training datasets;
+- regulatory approval has not yet been obtained;
+- full software deployment is still under development.
+
+---
+
+# Team
+
+(Add team members)
+
+## Roles
+
+Founder / Project Lead:
+- Product vision
+- Healthcare problem definition
+- Project coordination
+
+Technical Development:
+- AI development
+- Software engineering
+- System architecture
+
+Scientific/Healthcare Support:
+- Diagnostic validation
+- Clinical guidance
+- Healthcare implementation
