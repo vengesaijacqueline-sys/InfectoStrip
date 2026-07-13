@@ -56,7 +56,8 @@ Future InfectoStrip products may address additional diseases including:
 
 ---
 
-# Demo
+# prototype
+https://infectostrip-diagnostics.base44.app
 
 ## Prototype Screenshots
 
